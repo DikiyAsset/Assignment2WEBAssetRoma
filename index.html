@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="header-inner">
+      
+      <div class="logo">
+        <img src="Images/F1.png" alt="Grid Line Logo" class="logo-image">
+        <span class="logo-text">GRID<span class="logo-accent">LINE</span></span>
+      </div>
+
+      <nav class="nav-menu" id="primaryNav">
+        <ul>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="drivers.html">DRIVERS</a></li>
+          <li><a href="schedule.html">SCHEDULE</a></li>
+          <li><a href="contacts.html">CONTACTS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video autoplay muted playsinline class="hero-video">
+        <source src="Images/NewferVideo.mp4" type="video/mp4">
+      </video>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Season 2026</p>
+        <h1>The race<br>begins.</h1>
+        <p class="hero-sub">Grid Line an unofficial F1 fan site with information
+       about drivers, teams, races, and the 2026 season.
+        </p>
+        <a href="schedule.html" class="btn-primary">Watch schedule</a>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <img src="Images/Driveri.jpg" alt="New regulations" class="feature-img">
+        <h2>New Technical Regulations</h2>
+        <p>The 2026 season brings new aerodynamics, smaller power units, and sustainable fuel.</p>
+        <a href="drivers.html" class="card-btn">Meet the drivers</a>
+      </article>
+      <article class="feature-card">
+        <img src="Images/Worldmap.jpg" alt="Races 2026" class="feature-img">
+        <h2>24 Races in 2026</h2>
+        <p>The 2026 season includes 24 races around the world, from Australia to Abu Dhabi.</p>
+        <a href="schedule.html" class="card-btn">View schedule</a>
+      </article>
+      <article class="feature-card">
+        <img src="Images/Card3.jpg" alt="Teams and drivers" class="feature-img">
+        <h2>11 Teams, 22 Drivers</h2>
+        <p>Cadillac debuts as the eleventh team, while Audi makes its debut as a manufacturer team.</p>
+        <a href="drivers.html" class="card-btn">See the grid</a>
+      </article>
+    </section>
+
+    <section class="about-section">
+      <p class="hero-eyebrow">About Us</p>
+      <h2>Meet the Team</h2>
+
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Asset</h3>
+          <p>
+            Front-end developer and F1 fan. Worked on the website design,
+            navigation, and main pages.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <h3>Ramazan</h3>
+          <p>
+            Front-end developer and F1 fan. Worked on the page content,
+            schedule, and website structure.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="list-section">
+      <h2>What's New in the Season</h2>
+      <ul class="list-plain">
+        <li>Cadillac joins F1 as the 11th team.</li>
+        <li>Audi becomes a new factory team after taking over Sauber.</li>
+        <li>The Spanish Grand Prix moves to Madrid.</li>
+        <li>Imola is removed from the 2026 calendar.</li>
+        <li>Arvid Lindblad makes his F1 debut with Racing Bulls.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Asset, Ramazan</p>
+  </footer>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const heroText = document.querySelector('.hero-text');
+
+      setTimeout(() => {
+        if (heroText) {
+          heroText.classList.add('visible');
+        }
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
