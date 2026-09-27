@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drivers</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="Style.css">
+  <script src="vendor/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
 
   <header id="main-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="Images/F1.png" alt="Grid Line Logo" class="logo-image">
-        <span class="logo-text">GRID<span class="logo-accent">LINE</span></span>
-      </a>
-
-      <nav class="nav-menu" id="primaryNav">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="drivers.html" class="active">DRIVERS</a></li>
-          <li><a href="schedule.html">SCHEDULE</a></li>
-          <li><a href="contacts.html">CONTACTS</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark p-0" aria-label="Main navigation">
+      <div class="header-inner container-fluid">
+        <a href="index.html" class="logo">
+          <img src="Images/F1.png" alt="Grid Line Logo" class="logo-image">
+          <span class="logo-text">GRID<span class="logo-accent">LINE</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="nav-menu collapse navbar-collapse flex-grow-0" id="primaryNav">
+          <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+          <li class="nav-item"><a href="Drivers.html" class="nav-link active" aria-current="page">DRIVERS</a></li>
+          <li class="nav-item"><a href="Schedule.html" class="nav-link">SCHEDULE</a></li>
+          <li class="nav-item"><a href="Contacts.html" class="nav-link">CONTACTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="page-intro">
       <div class="intro-text">
       <p class="hero-eyebrow">Drivers 2026</p>
@@ -38,85 +42,99 @@
     </section>
 
     <section class="gallery">
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
+        <img src="Images/Roma.jpg" alt="Ramazan">
+        <figcaption>
+          <h3>Ramazan Abylkassym</h3>
+          <p>Shymkent · Kazakhstan</p>
+        </figcaption>
+      </figure>
+      <figure class="gallery-item" tabindex="0">
+        <img src="Images/Asset.jpg" alt="Asetik">
+        <figcaption>
+          <h3>Asset Nakipbek</h3>
+          <p>Astana · Kazakhstan</p>
+        </figcaption>
+      </figure>
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/Norris.png" alt="Lando Norris">
         <figcaption>
           <h3>Lando Norris</h3>
           <p>McLaren · United Kingdom</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/Piastri.png" alt="Oscar Piastri">
         <figcaption>
           <h3>Oscar Piastri</h3>
           <p>McLaren · Australia</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/Leclerc.png" alt="Charles Leclerc">
         <figcaption>
           <h3>Charles Leclerc</h3>
           <p>Ferrari · Monaco</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/Hamilton.png" alt="Lewis Hamilton">
         <figcaption>
           <h3>Lewis Hamilton</h3>
           <p>Mercedes · United Kingdom</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/Russell.png" alt="George Russell">
         <figcaption>
           <h3>George Russell</h3>
           <p>Mercedes · United Kingdom</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/antonelli.png" alt="Kimi Antonelli">
         <figcaption>
           <h3>Kimi Antonelli</h3>
           <p>Mercedes · Italy</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
-        <img src="Images/Verstappen.png" alt="Max Verstappen">
+      <figure class="gallery-item" tabindex="0">
+        <img src="Images/verstappen.png" alt="Max Verstappen">
         <figcaption>
           <h3>Max Verstappen</h3>
           <p>Red Bull · Netherlands</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/hadjar.png" alt="Isaac Hadjar">
         <figcaption>
           <h3>Isaac Hadjar</h3>
           <p>Red Bull · Mexico</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/Alonso.png" alt="Fernando Alonso">
         <figcaption>
           <h3>Fernando Alonso</h3>
           <p>Aston Martin · Spain</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
+      <figure class="gallery-item" tabindex="0">
         <img src="Images/Stroll.png" alt="Lance Stroll">
         <figcaption>
           <h3>Lance Stroll</h3>
           <p>Aston Martin · Canada</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
-        <img src="Images/Valterri.png" alt="Valtteri Bottas">
+      <figure class="gallery-item" tabindex="0">
+        <img src="Images/valterri.png" alt="Valtteri Bottas">
         <figcaption>
           <h3>Valtteri Bottas</h3>
           <p>Cadillac · Finland</p>
         </figcaption>
       </figure>
-      <figure class="gallery-item">
-        <img src="Images/Peres.png" alt="Sergio Peres">
+      <figure class="gallery-item" tabindex="0">
+        <img src="Images/peres.png" alt="Sergio Peres">
         <figcaption>
           <h3>Sergio Peres</h3>
           <p>Cadillac · Mexico</p>
@@ -132,6 +150,80 @@
         <li>The only newcomer of the season - Arvid Lindblad in the Racing Bulls lineup.</li>
       </ol>
     </section>
+    <section class="list-section driver-carousel" aria-labelledby="driver-gallery-title">
+      <h2 id="driver-gallery-title">Driver Gallery</h2>
+      <div id="driverCarousel" class="carousel slide" data-bs-interval="false" aria-label="Driver Gallery">
+        <div class="carousel-inner" aria-live="polite">
+          <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+            <div class="row g-0 card-group">
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/Norris.png" class="carousel-driver-image" alt="Lando Norris">
+                <h3 class="card-title mt-3 mb-2">Lando Norris</h3>
+                <p class="card-text mb-0">McLaren · United Kingdom</p>
+              </article>
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/Piastri.png" class="carousel-driver-image" alt="Oscar Piastri">
+                <h3 class="card-title mt-3 mb-2">Oscar Piastri</h3>
+                <p class="card-text mb-0">McLaren · Australia</p>
+              </article>
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/Leclerc.png" class="carousel-driver-image" alt="Charles Leclerc">
+                <h3 class="card-title mt-3 mb-2">Charles Leclerc</h3>
+                <p class="card-text mb-0">Ferrari · Monaco</p>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 3">
+            <div class="row g-0 card-group">
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/Hamilton.png" class="carousel-driver-image" alt="Lewis Hamilton">
+                <h3 class="card-title mt-3 mb-2">Lewis Hamilton</h3>
+                <p class="card-text mb-0">Mercedes · United Kingdom</p>
+              </article>
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/Russell.png" class="carousel-driver-image" alt="George Russell">
+                <h3 class="card-title mt-3 mb-2">George Russell</h3>
+                <p class="card-text mb-0">Mercedes · United Kingdom</p>
+              </article>
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/antonelli.png" class="carousel-driver-image" alt="Kimi Antonelli">
+                <h3 class="card-title mt-3 mb-2">Kimi Antonelli</h3>
+                <p class="card-text mb-0">Mercedes · Italy</p>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 3">
+            <div class="row g-0 card-group">
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/verstappen.png" class="carousel-driver-image" alt="Max Verstappen">
+                <h3 class="card-title mt-3 mb-2">Max Verstappen</h3>
+                <p class="card-text mb-0">Red Bull · Netherlands</p>
+              </article>
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/hadjar.png" class="carousel-driver-image" alt="Isaac Hadjar">
+                <h3 class="card-title mt-3 mb-2">Isaac Hadjar</h3>
+                <p class="card-text mb-0">Red Bull · Mexico</p>
+              </article>
+              <article class="card col-12 col-lg-4 carousel-card p-3">
+                <img src="Images/Alonso.png" class="carousel-driver-image" alt="Fernando Alonso">
+                <h3 class="card-title mt-3 mb-2">Fernando Alonso</h3>
+                <p class="card-text mb-0">Aston Martin · Spain</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators position-static my-3">
+          <button type="button" data-bs-target="#driverCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Lando Norris, Oscar Piastri and Charles Leclerc"></button>
+          <button type="button" data-bs-target="#driverCarousel" data-bs-slide-to="1" aria-label="Slide 2: Lewis Hamilton, George Russell and Kimi Antonelli"></button>
+          <button type="button" data-bs-target="#driverCarousel" data-bs-slide-to="2" aria-label="Slide 3: Max Verstappen, Isaac Hadjar and Fernando Alonso"></button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Carousel controls">
+          <button type="button" class="btn btn-outline-light btn-sm" data-bs-target="#driverCarousel" data-bs-slide="prev" aria-label="Previous drivers">Previous</button>
+          <button type="button" class="btn btn-outline-light btn-sm" data-bs-target="#driverCarousel" data-bs-slide="next" aria-label="Next drivers">Next</button>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>

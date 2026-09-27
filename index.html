@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="Style.css">
+  <script src="vendor/bootstrap.bundle.min.js" defer></script>
 
 </head>
 <body>
 
   <header id="main-header">
-    <div class="header-inner">
-      
-      <div class="logo">
-        <img src="Images/F1.png" alt="Grid Line Logo" class="logo-image">
-        <span class="logo-text">GRID<span class="logo-accent">LINE</span></span>
+    <nav class="navbar navbar-expand-lg navbar-dark p-0" aria-label="Main navigation">
+      <div class="header-inner container-fluid">
+        <a href="index.html" class="logo">
+          <img src="Images/F1.png" alt="Grid Line Logo" class="logo-image">
+          <span class="logo-text">GRID<span class="logo-accent">LINE</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="nav-menu collapse navbar-collapse flex-grow-0" id="primaryNav">
+          <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">HOME</a></li>
+          <li class="nav-item"><a href="Drivers.html" class="nav-link">DRIVERS</a></li>
+          <li class="nav-item"><a href="Schedule.html" class="nav-link">SCHEDULE</a></li>
+          <li class="nav-item"><a href="Contacts.html" class="nav-link">CONTACTS</a></li>
+          </ul>
+        </div>
       </div>
-
-      <nav class="nav-menu" id="primaryNav">
-        <ul>
-          <li><a href="index.html" class="active">HOME</a></li>
-          <li><a href="drivers.html">DRIVERS</a></li>
-          <li><a href="schedule.html">SCHEDULE</a></li>
-          <li><a href="contacts.html">CONTACTS</a></li>
-        </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
       <video autoplay muted playsinline class="hero-video">
         <source src="Images/NewferVideo.mp4" type="video/mp4">
@@ -40,7 +43,7 @@
         <p class="hero-sub">Grid Line an unofficial F1 fan site with information
        about drivers, teams, races, and the 2026 season.
         </p>
-        <a href="schedule.html" class="btn-primary">Watch schedule</a>
+        <a href="Schedule.html" class="btn btn-primary btn-lg">Watch schedule</a>
       </div>
     </section>
 
@@ -49,42 +52,41 @@
         <img src="Images/Driveri.jpg" alt="New regulations" class="feature-img">
         <h2>New Technical Regulations</h2>
         <p>The 2026 season brings new aerodynamics, smaller power units, and sustainable fuel.</p>
-        <a href="drivers.html" class="card-btn">Meet the drivers</a>
+        <a href="Drivers.html" class="btn btn-danger card-btn">Meet the drivers</a>
       </article>
       <article class="feature-card">
         <img src="Images/Worldmap.jpg" alt="Races 2026" class="feature-img">
         <h2>24 Races in 2026</h2>
         <p>The 2026 season includes 24 races around the world, from Australia to Abu Dhabi.</p>
-        <a href="schedule.html" class="card-btn">View schedule</a>
+        <a href="Schedule.html" class="btn btn-danger card-btn">View schedule</a>
       </article>
       <article class="feature-card">
         <img src="Images/Card3.jpg" alt="Teams and drivers" class="feature-img">
         <h2>11 Teams, 22 Drivers</h2>
         <p>Cadillac debuts as the eleventh team, while Audi makes its debut as a manufacturer team.</p>
-        <a href="drivers.html" class="card-btn">See the grid</a>
+        <a href="Drivers.html" class="btn btn-danger card-btn">See the grid</a>
       </article>
     </section>
 
-    <section class="about-section">
+    <section class="about-section container">
       <p class="hero-eyebrow">About Us</p>
       <h2>Meet the Team</h2>
-
-      <div class="about-grid">
-        <article class="about-card">
+      <div class="about-grid row">
+        <div class="col-12 col-lg-6"><article class="about-card">
           <h3>Asset</h3>
           <p>
             Front-end developer and F1 fan. Worked on the website design,
             navigation, and main pages.
           </p>
-        </article>
+        </article></div>
 
-        <article class="about-card">
+        <div class="col-12 col-lg-6"><article class="about-card">
           <h3>Ramazan</h3>
           <p>
             Front-end developer and F1 fan. Worked on the page content,
             schedule, and website structure.
           </p>
-        </article>
+        </article></div>
       </div>
     </section>
 
@@ -102,6 +104,7 @@
 
   <footer>
     <p>Created by Asset, Ramazan</p>
+    <p class="media-link"><a href="MediaQueries.html">Media Queries</a></p>
   </footer>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
